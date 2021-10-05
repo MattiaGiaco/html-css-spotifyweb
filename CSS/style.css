@@ -34,7 +34,8 @@ a:hover{
 main{
   width: 100%;
   height: calc(100% - 80px);
-  background-color: steelblue;
+  background-color: #141922
+  ;
 }
 
 aside{
@@ -106,7 +107,23 @@ aside{
   z-index: 999;
   width: calc(100% - 300px);
   height: 80px;
-  background-color: gray;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.upgrade button{
+  float: right;
+  background-color: transparent;
+  color: white;
+  padding: 10px 35px;
+  border-radius: 20px;
+  margin: 20px 1px;
+  border: 1px solid white;
+  transition: all 1s;
+
+}
+
+.upgrade button:hover{
+  font-size: 20px;
 }
 
 .content{
@@ -119,6 +136,7 @@ aside{
 footer{
   height: 80px;
   width: 100%;
-  background-color: gray;
+  background-color: #282828
+  ;
 }
 
