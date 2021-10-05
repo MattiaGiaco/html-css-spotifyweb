@@ -7,26 +7,88 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.0/css/all.min.css" integrity="sha512-AyOHI/tIMgoG+32apAs3OdqFowPSDqiz5vLcD2wdhBJ4J/xF1PI6UITcyhS5HCmsiioapRaONqYBvimxzFfnoA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="CSS/style.css">
   <title>My Spotify</title>
 </head>
 <body>
+  <div class="wrapper">
 
-  <main>
-    <aside>
-      <div class="logo"></div>
-  
-      <div class="main-menu"></div>
-  
-      <div class="playlist"></div>
-  
-      <div class="user"></div>
-    </aside>
+    <main class="clearfix">
+
+      <aside>
+        <div class="logo">
+          <img src="img/logo.svg" alt="">
+        </div>
     
-    <div class="upgrade"></div>
-  </main>
+        <div class="main-menu">
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fas fa-home"></i>
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-search"></i>
+                Cerca
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-book"></i>
+                La tua libreria
+              </a>
+            </li>
+          </ul>
+        </div>
+    
+        <div class="playlist">
+          <h3>Playlist</h3>
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fas fa-plus"></i>
+                Crea Playlist
+              </a>
+            </li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+          </ul>
+        </div>
+    
+        <div class="user">
+          <span>
+            <i class="far fa-arrow-alt-circle-down"></i>
+            Installa App
+          </span>
+          <div class="line"></div>
+          <span>
+            <i class="fas fa-user"></i>
+            Mattia Giaco
+          </span>
+        </div>
+      </aside>
+  
+      <div class="upgrade"></div>
+      
+      <div class="content">
+        
+      </div>
+      
 
-  <footer></footer>
+    </main>
+  
+    <footer></footer>
+  </div>
+
+ 
 
 </body>
 </html>
