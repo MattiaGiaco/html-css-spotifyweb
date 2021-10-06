@@ -42,12 +42,23 @@ main{
   ;
 }
 
+/* SIDE BAR */
 aside{
-  width: 300px;
+  width: 250px;
   height: 100% ;
   float: left;
-  padding: 20px;
+  padding: 20px 20px 2px 20px;
   background-color: black;
+  overflow: hidden;
+}
+
+aside .side-top{
+  height: calc(100% - 80px);
+  min-height: 250px;
+}
+
+aside .side-bottom{
+  height: 60px;
 }
 
 .logo{
@@ -61,16 +72,22 @@ aside{
 
 .main-menu ul li{
   padding-bottom: 20px;
+  display: flex;
 }
 
-.main-menu i{
-  font-size: 30px;
+.main-menu img{
+  width: 30px;
+}
+
+.main-menu a{
+  line-height: 30px;
+  margin-left: 10px;
 }
 
 .playlist ul{
   color: gray;
   list-style: none;
-  line-height: 30px;
+  line-height: 35px;
 }
 
 .playlist .fa-plus{
@@ -80,16 +97,20 @@ aside{
   margin: 10px 5px 10px 0;
 }
 
-.user{
-  margin-top: 98%;
+.download, .profile{
+  display: flex;
 }
 
-.user span:first-child{
+.download{
   color: gray;
 }
 
-.user i{
-  margin-right: 5px;
+.download img{
+  width: 20px;
+}
+
+.user img{
+  margin-right: 8px;
 }
 
 .line{
@@ -98,18 +119,23 @@ aside{
   margin: 10px auto;
 }
 
-.user .fa-user{
+.profile img{
   background-color: gray;
-  padding: 8px 10px;
   border-radius: 50%;
+  width: 25px;
 }
 
+.profile span{
+  line-height: 30px;
+}
+
+/* UPGRADE */
 .upgrade{
   position: fixed;
   top: 0;
   right: 0;
   z-index: 999;
-  width: calc(100% - 300px);
+  width: calc(100% - 250px);
   height: 80px;
   background-color: rgba(0, 0, 0, .5);
 }
@@ -130,27 +156,91 @@ aside{
   font-size: 20px;
 }
 
+
+/* CONTENT */
 .content{
-  width: calc(100% - 300px);
+  width: calc(100% - 250px);
   height: 100%;
   padding-top: 80px;
   float: left;
+  overflow: auto;
 }
 
+/* nav */
 .content nav ul{
   display: flex;
   justify-content: space-around;
-  width: 70%;
+  width: 60%;
   margin: 20px auto;
   text-align: center;
   list-style: none;
   color: gray;
 }
 
+.content nav ul li a{
+  font-size: 14px;
+}
+
+/* albums */
+.recently-played, .create-for-me, .most-popular{
+  margin: 30px 20px;
+}
+
+h3{
+  font-size: 15px;
+}
+
+h6{
+  color: gray;
+  font-size: 12px;
+}
+
+.row{
+  display: flex;
+  margin-top: 30px;
+}
+
+.album{
+  padding-right: 10px;
+}
+
+.album img{
+  width: 12vw;
+  height: 12vw;
+}
+
+.album h3, .album h6, .album-create h3{
+  text-align: center;
+  width: 12vw;
+  padding-top: 8px;
+}
+
+.create-for-me h6, .most-popular h6{
+  margin-top: 7px;
+}
+
+.most-popular .album img{
+  border-radius: 50%;
+}
+
+/* FOOTER */
 footer{
   height: 80px;
   width: 100%;
-  background-color: #282828
-  ;
+  background-color: #282828;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width:600px){
+  aside{
+    width: 50px;
+  }
+  .content{
+    width: calc(100% - 50px);
+  }
+  .upgrade{
+    width: calc(100% - 50px);
+  }
 }
 

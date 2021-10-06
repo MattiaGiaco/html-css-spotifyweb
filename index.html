@@ -9,6 +9,7 @@
  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.0/css/all.min.css" integrity="sha512-AyOHI/tIMgoG+32apAs3OdqFowPSDqiz5vLcD2wdhBJ4J/xF1PI6UITcyhS5HCmsiioapRaONqYBvimxzFfnoA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="CSS/style.css">
+  <link rel="icon" href="img/logo-small.svg">
   <title>My Spotify</title>
 </head>
 <body>
@@ -17,62 +18,60 @@
     <main class="clearfix">
 
       <aside>
-        <div class="logo">
-          <img src="img/logo.svg" alt="">
+        <div class="side-top">
+          <div class="logo">
+            <img src="img/logo.svg" alt="">
+          </div>
+      
+          <div class="main-menu">
+            <ul>
+              <li>
+                <img src="img/home.svg" alt="">
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <img src="img/search.svg" alt="">
+                <a href="#">Cerca</a>
+              </li>
+              <li>
+                <img src="img/libreria.svg" alt="">
+                <a href="#">La tua libreria</a>
+              </li>
+            </ul>
+          </div>
+      
+          <div class="playlist">
+            <h3>Playlist</h3>
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="fas fa-plus"></i>
+                  Crea Playlist
+                </a>
+              </li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+            </ul>
+          </div>
         </div>
     
-        <div class="main-menu">
-          <ul>
-            <li>
-              <a href="#">
-                <i class="fas fa-home"></i>
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fas fa-search"></i>
-                Cerca
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fas fa-book"></i>
-                La tua libreria
-              </a>
-            </li>
-          </ul>
-        </div>
-    
-        <div class="playlist">
-          <h3>Playlist</h3>
-          <ul>
-            <li>
-              <a href="#">
-                <i class="fas fa-plus"></i>
-                Crea Playlist
-              </a>
-            </li>
-            <li><a href="#">Nome Playlist</a></li>
-            <li><a href="#">Nome Playlist</a></li>
-            <li><a href="#">Nome Playlist</a></li>
-            <li><a href="#">Nome Playlist</a></li>
-            <li><a href="#">Nome Playlist</a></li>
-            <li><a href="#">Nome Playlist</a></li>
-            <li><a href="#">Nome Playlist</a></li>
-          </ul>
-        </div>
-    
-        <div class="user">
-          <span>
-            <i class="far fa-arrow-alt-circle-down"></i>
-            Installa App
-          </span>
-          <div class="line"></div>
-          <span>
-            <i class="fas fa-user"></i>
-            Mattia Giaco
-          </span>
+        <div class="side-bottom">
+          <div class="user">
+            <div class="download">
+              <img src="img/download.svg" alt="">
+              <span>Installa App</span>
+            </div>
+            <div class="line"></div>
+            <div class="profile">
+              <img src="img/profile.svg" alt="">
+              <span>Mattia Giaco</span>
+            </div>
+          </div>
         </div>
       </aside>
   
@@ -91,6 +90,72 @@
             <li><a href="#">SCOPRI</a></li>
           </ul>
         </nav>
+        
+        <div class="recently-played">
+          <h2>Recently played</h2>
+          <div class="row">
+            <div class="album">
+              <img src="img/metal_lifting.jpg" alt="">
+              <h3>Heavy Metal</h3>
+              <h6>Subtitle</h6>
+            </div>
+            <div class="album">
+              <img src="img/stranger.jpeg" alt="">
+              <h3>Stanger Things, Vol.1(a Netflix Original Series Soundtrack)</h3>
+              <h6>Subtitle</h6>
+            </div>
+            <div class="album">
+              <img src="img/aquietplace.jpeg" alt="">
+              <h3>A quiet place</h3>
+              <h6>Subtitle</h6>
+            </div>
+            <div class="album">
+              <img src="img/split.jpeg" alt="">
+              <h3>Split</h3>
+              <h6>Subtitle</h6>
+            </div>
+            <div class="album">
+              <img src="img/cure.jpeg" alt="">
+              <h3>A cure for wellness</h3>
+              <h6>Subtitle</h6>
+            </div>
+            <div class="album">
+              <img src="img/sinister.jpeg" alt="">
+              <h3>Sinister</h3>
+              <h6>Subtitle</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="create-for-me">
+          <h2>Creato per Mattia Giaco</h2>
+          <h6>Più ascolti, più accurati saranno i suggerimenti</h6>
+          <div class="row">
+            <div class="album">
+              <img src="img/radar.jpeg" alt="">
+              <h3>Release Radar</h3>
+            </div>
+            <div class="album">
+              <img src="img/mixdaily.jpeg" alt="">
+              <h3>Daily Mix 1</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="most-popular">
+          <h2>Artisti più popolari</h2>
+          <h6>Più ascolti, più accurati saranno i suggerimenti</h6>
+          <div class="row">
+            <div class="album">
+              <img src="img/youg.jpeg" alt="">
+              <h3>Release Radar</h3>
+            </div>
+            <div class="album">
+              <img src="img/einaudi.jpeg" alt="">
+              <h3>Release Radar</h3>
+            </div>
+          </div>
+        </div>
       </div>
       
 
