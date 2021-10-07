@@ -214,7 +214,7 @@ h6{
 
 .album{
   padding-right: 10px;
-  width: 25%;
+  width: 17%;
 }
 
 
@@ -285,7 +285,7 @@ footer i{
 
 .footer-left{
   display: flex;
-  flex-shrink: 0;
+  width: 20%;
 }
 
 .song{
@@ -312,10 +312,10 @@ footer i{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  width: 60%;
 }
 
-.center-top, .center-bottom, .footer-right{
+.center-top, .center-bottom{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -375,12 +375,15 @@ footer i{
 }
 
 .footer-right{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 20%;
   flex-shrink: 0;
 }
 
 .footer-right i{
   color: white;
-  margin-right: 10px;
 }
 
 .volume-line{
@@ -389,6 +392,7 @@ footer i{
   background-color: gray;
   border-radius: 10px;
   cursor: pointer;
+  margin-left: 20px;
 }
 
 .volume-line:hover .line-progress{
@@ -439,7 +443,7 @@ footer i{
     width: 80px;
   }
   .album{
-    width: 50%%;
+    width: 50%;
   }
   .download, .profile{
     width: 50px;
