@@ -153,7 +153,6 @@ aside .side-bottom{
   margin: 20px;
   border: 1px solid white;
   transition: all 1s;
-
 }
 
 .upgrade button:hover{
@@ -210,9 +209,37 @@ h6{
   padding-right: 10px;
 }
 
-.album img{
+.album .image{
+  position: relative;
+  transition: .5s ease;
+}
+
+.album .image img{
   width: 12vw;
-  height: 12vw;
+}
+
+.overlay{
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 99%;
+  transition: all 1s;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay i{
+  position: absolute;
+  font-size: 300%;
+  top: 50%;
+  left: 50%;
+  transform: translate( -50%, -50%);
+}
+
+.album .image:hover .overlay{
+  display: block;
+  cursor: pointer;
 }
 
 .album h3, .album h6, .album-create h3{
@@ -226,6 +253,10 @@ h6{
 }
 
 .most-popular .album img{
+  border-radius: 50%;
+}
+
+.most-popular .album .image .overlay{
   border-radius: 50%;
 }
 
@@ -288,6 +319,11 @@ footer i{
 
 .center-top .fa-play-circle{
   font-size: 30px;
+  transition: all 0.5s;
+}
+
+.center-top .fa-play-circle:hover{
+  font-size: 35px;
 }
 
 .center-bottom .time{
@@ -296,10 +332,38 @@ footer i{
 
 .play-line{
  width: 35vw;
- border: 2px solid gray;
+ height: 5px;
+ background-color: gray;
  margin: 10px 20px;
  border-radius: 10px;
  cursor: pointer;
+}
+
+.line-progress{
+  position: relative;
+  height: 100%;
+  width: 30%;
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+
+.play-line:hover .line-progress{
+  background-color: yellowgreen;
+}
+
+.dot{
+  position: absolute;
+  display: none;
+  width: 15px;
+  height: 15px;
+  top: -5px;
+  right: 0;
+  border-radius: 50%;
+  background-color: whitesmoke;
+}
+
+.line-progress:hover .dot{
+  display: block;
 }
 
 .footer-right{
@@ -313,9 +377,14 @@ footer i{
 
 .volume-line{
   width: 100px;
-  border: 2px solid gray;
+  height: 5px;
+  background-color: gray;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.volume-line:hover .line-progress{
+  background-color: yellowgreen;
 }
 
 /* RESPONSIVE */
@@ -325,8 +394,10 @@ footer i{
     display: flex;
     flex-wrap: wrap;
   }
-  .album img{
-    height: 20vw;
+  .album .image img{
+    width: 20vw;
+  }
+  .album h3, .album h6, .album-create h3{
     width: 20vw;
   }
 }
@@ -334,6 +405,7 @@ footer i{
 @media screen and (max-width:576px){
   aside{
     width: 50px;
+    padding: 10px;
   }
   .content{
     width: calc(100% - 50px);
@@ -355,14 +427,15 @@ footer i{
   .main-menu li{
     width: 80px;
   }
-  .album img{
-    height: 35vw;
+  .album .image img{
     width: 35vw;
   }
   .download, .profile{
     width: 50px;
     margin: 10px 0;
-
+  }
+  .album h3, .album h6, .album-create h3{
+    width: 35vw;
   }
 }
 
